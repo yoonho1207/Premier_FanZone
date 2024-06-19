@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-button, .qr-button {
+            width: 100%;
+            background-color: #FEE500;
+            color: #333;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .qr-button {
+            background-color: #f0f0f0;
+            color: #888;
+            box-shadow: none;
+        }
+        .footer-text {
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>kakao</h2>
+        <form action="index.html" method="POST"> 
+            <div class="form-group">
+                <input type="text" placeholder="카카오계정 이메일, 전화번호">
+            </div>
+            <button type="submit" class="login-button">로그인</button>
+            <button type="button" class="qr-button" onclick="window.location.href='https://example.com/qr-login';">QR코드 로그인</button>
+        </form>
+        <div class="footer-text">
+            한국어 | 이용약관 | 개인정보 처리방침 | 고객센터 | © Kakao Corp.
+        </div>
+    </div>
+</body>
+</html>

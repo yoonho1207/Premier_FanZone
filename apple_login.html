@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple ID Login</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: white;
+            padding: 40px 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 360px;
+        }
+        .title {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .icon {
+            width: 60px; /* Adjust according to actual icon size */
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .action-link {
+            color: #007aff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer {
+            font-size: 11px;
+            color: #6d6d6d;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="title">Apple ID</div>
+
+        <form action="index.html" method="GET">
+            <div class="form-group">
+                <input type="text" placeholder="Apple ID를 사용해 Premier FanZone에 로그인하기">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="로그인">
+            </div>
+            <a href="#" class="action-link">아이디 또는 패스워드를 잊으셨습니까?</a>
+        </form>
+        <p class="footer">
+            'Apple은 고객님의 정보를 보호할 수 있게 독립된 회사 Apple 이외 기관과 상호작용 중 효율적인 방법을 사용하는 동시에 Apple이 서버를 운영합니다. 사용자의 데이터가 어떻게 관리되는지 알고...'
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>덴마크 vs 잉글랜드 live</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  }
+
+  .main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .main-content iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+
+  .video-title {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar h2 {
+    color: #333;
+    padding-bottom: 20px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .button img {
+    width: 90px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .button:hover {
+    background-color: #666;
+    transform: translateY(-3px);
+  }
+
+  .highlight-container {
+    display: flex;
+    align-items: center; /* Vertically center the items in the container */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+.highlight-title {
+    margin-right: 10px; /* Space between the title and the image */
+    font-size: 18px; /* Optional: Adjust font size as needed */
+    color: #333; /* Color of the text */
+    flex-shrink: 0; /* Prevents the title from shrinking */
+}
+
+.sidebar-image {
+    width: 60px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the allocated area without distorting aspect ratio */
+    border-radius: 5px; /* Rounds the corners of the image */
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/15Xo6g3A7XQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3 class="video-title">덴마크 vs 잉글랜드</h3>
+    </div>
+    <div class="sidebar">
+        <div class="highlight-container">
+            <h2 class="highlight-title">주요 매치</h2>
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="홈화면로고" class="sidebar-image">
+            </a>
+        </div>
+        <div class="button" onclick="location.href='croatiaalbania_live.html'">
+            <img src="assets/img/croatiaalbania.jpg" alt="craotiaalbania">
+            크로아티아 vs 알바니아
+        </div>
+        <div class="button" onclick="location.href='netherlandfrance_live.html'">
+            <img src="assets/img/netherlandfrance.jpg" alt="netherlandfrance">
+            네덜란드 vs 프랑스 
+        </div>
+        <div class="button" onclick="location.href='germanyhungary_live.html'">
+            <img src="assets/img/germanyhungary.jpg" alt="germanyhungary">
+            독일 vs 헝가리
+        </div>
+        <div class="button" onclick="location.href='argentinacanada_live.html'">
+            <img src="assets/img/argentinacanada.jpg" alt="argencanada">
+            아르헨티나 vs 캐나다
+        </div>
+        <div class="button" onclick="location.href='brazilcostarica_live.html'">
+            <img src="assets/img/brazilcostarica.jpg" alt="'brazilcostarica'">
+            브라질 vs 코스타리카
+        </div>
+    </div>
+    
+    
+  </div>
+</body>
+</html>

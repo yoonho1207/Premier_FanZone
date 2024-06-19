@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <style>
+        * { box-sizing: border-box; }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .split {
+            height: 100%;
+            position: fixed;
+            top: 0;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+        .left {
+            left: 0;
+            width: 65%; /* 왼쪽 영역의 너비를 65%로 설정 */
+            background: url('assets/img/spainitaly.png') no-repeat center center; /* 이미지 중앙에 배치 */
+            background-size: cover; /* 이미지가 영역을 완전히 덮도록 설정 */
+            height: 100vh; /* 영역의 높이를 뷰포트의 100%로 설정 */
+        }
+
+
+        .right {
+            right: 0;
+            width: 35%; /* 오른쪽 영역의 너비 설정 */
+            background-color: #270801;
+        }
+        .centered-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #f1f1f1;
+        }
+        button {
+            background-color: #db3c23;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .social-link a {
+            color: gray;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .logo-img {
+        width: 300px; /* 원하는 너비 설정 */
+        height: auto; /* 높이를 자동으로 조정하여 비율을 유지 */
+        }   
+    </style>
+</head>
+<body>
+    <div class="split left">
+
+    </div>
+    <div class="split right">
+        <div class="centered-form">
+            <h2><img src="assets\img\logo.png" alt="logo" class="logo-img"></h2>
+            <form id="loginForm">
+                <div><input type="text" placeholder="아이디" name="id" required></div>
+                <div><input type="password" placeholder="비밀번호" name="password" required></div>
+                <button type="button" onclick="login()">로그인</button>
+            </form>
+            <div style="color: gray; margin-top: 20px;">
+                SNS 계정으로 로그인 하기
+                <div class="social-link">
+                    <a href="kakao_login.html" rel="">카카오</a>
+                    <a href="naver_login.html">네이버</a>
+                    <a href="facebook_login.html">페이스북</a>
+                    <a href="apple_login.html">애플</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            // 여기에 필요한 로그인 검증 로직을 추가할 수 있습니다.
+            window.location.href = 'index.html'; // 성공 시 리디렉션할 페이지
+        }
+    </script>
+</body>
+</html>
+
+
